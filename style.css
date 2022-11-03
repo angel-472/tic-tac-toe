@@ -1,0 +1,131 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 105vh;
+}
+
+body {
+  background: linear-gradient(rgba(33, 34, 36, 0.5), rgba(33, 34, 36, 0.8)), url("img/background.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* the game */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  font-family: roboto;
+  color: white;
+}
+
+.game-header {
+  background-color: #494d57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  gap: 18px;
+}
+
+.game-header h1 {
+  margin: 0;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.game-header .score {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  background-color: #30343d;
+  padding: 50px 20px;
+}
+
+.game button {
+  width: 100px;
+  height: 100px;
+  background-color: #494d57;
+  padding: 0;
+  border: 1px solid #30343d;
+  color: white;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+.game .O {
+  color: #2a7db8;
+}
+
+.game .X {
+  color: #b82a2a;
+}
+
+
+.game .hovering {
+  background-color: #525459;
+}
+
+.game .won-line {
+  background-color: #7fdb93;
+  color: white;
+}
+
+.game .lost-line {
+  background-color: #db7f7f;
+  color: white;
+}
+
+.end-card {
+  display: none;
+  background-color: #30343d;
+  width: 450px;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0px;
+  border-radius: 20px;
+}
+
+.end-card h1 {
+  margin: 0px;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.end-card p {
+  margin: 8px 0px 0px 0px;
+  font-size: 18px;
+}
+
+.end-card button {
+  background-color: #13d42d;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  padding: 12px 17px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 5px 0 #0b8a1c;
+  font-size: 20px;
+  margin: 24px 0px 0px 0px;
+}
+
+.end-card button:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
