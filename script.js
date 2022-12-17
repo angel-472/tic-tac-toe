@@ -70,7 +70,6 @@ function computerThink(mode){
     for(p = 0; p < patterns.length; p++){
       pattern = shuffledPatterns[p];
       threat = 0;
-      good = 0;
       for(a = 0; a <= 2; a++){
         if(grid[pattern[a]] == computerSelection){
           threat--;
